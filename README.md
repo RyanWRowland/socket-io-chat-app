@@ -31,3 +31,7 @@ The server runs on `http://localhost:5000` and the client runs on `http://localh
 
 ## Info
 Built following [Brad Traversy](http://www.traversymedia.com/)'s video [React & Express Starter Pack For Full Stack Development](https://youtu.be/v0t42xBIYIs)
+
+### Todo
+* Add Redux
+* Add Socket.IO

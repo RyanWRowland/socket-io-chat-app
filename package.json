@@ -1,0 +1,19 @@
+{
+  "name": "react-express-boiler",
+  "version": "1.0.0",
+  "description": "Boilerplate for a React-Express application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanWRowland/react-express-boiler.git"
+  },
+  "author": "Ryan Rowland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RyanWRowland/react-express-boiler/issues"
+  },
+  "homepage": "https://github.com/RyanWRowland/react-express-boiler#readme"
+}

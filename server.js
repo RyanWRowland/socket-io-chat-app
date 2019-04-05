@@ -1,17 +1,15 @@
-const express = require('express');
-
-const app = express();
-
-app.get('/api/customers', (req, res) => {
-  const customers = [
-    { id: 1, firstName: 'John', lastName: 'Doe' },
-    { id: 2, firstName: 'Mike', lastName: 'Smith' },
-    { id: 3, firstName: 'Chuck', lastName: 'Norris' },
-  ];
-
-  res.json(customers);
-});
+const app = require('express')();
+const server = require('http').Server(app);
+const io = require('socket.io')(server);
 
 const port = 5000;
+server.listen(port, () => `Server running on port ${port}`);
 
-app.listen(port, () => `Server running on port ${port}`);
+io.on('connection', (socket) => {
+  console.log(socket.id);
+
+  socket.on('SEND_MESSAGE', (data) => {
+    console.log(data);
+    io.emit('RECEIVE_MESSAGE', data);
+  });
+});

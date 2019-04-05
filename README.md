@@ -1,5 +1,5 @@
-# react-express-boiler
-Boilerplate for a React-Express application
+# socket-io-chat-app
+Basic socket.io chat app using react and express.
 
 ## Getting started
 To install dependencies for the server:
@@ -30,8 +30,4 @@ npm run client
 The server runs on `http://localhost:5000` and the client runs on `http://localhost:3000`
 
 ## Info
-Built following [Brad Traversy](http://www.traversymedia.com/)'s video [React & Express Starter Pack For Full Stack Development](https://youtu.be/v0t42xBIYIs)
-
-### Todo
-* Add Redux
-* Add Socket.IO
+Built following [Antonio Erdeljac's tutorial on cloudboost](https://blog.cloudboost.io/creating-a-chat-web-app-using-express-js-react-js-socket-io-1b01100a8ea5).
